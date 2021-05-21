@@ -1,0 +1,19 @@
+{
+  "name": "@buuug7/simplify",
+  "version": "2.6.1",
+  "description": "simplify css framework",
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "keywords": [
+    "simplify",
+    "css framework"
+  ],
+  "author": "buuug7 <youpp@126.com>",
+  "license": "MIT",
+  "dependencies": {}
+}

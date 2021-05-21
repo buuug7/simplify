@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <title>Switch</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="padding: 1rem">
+<h2>Switch</h2>
+
+<blockquote>
+  Note: The framework only provide style and not interaction with
+  Javascript, how to implement depend on you. for example, if you use React
+  or Vue, you need to wrap this as a component. if you use native
+  javascript, the below have a basic implementation.
+</blockquote>
+
+<div class="switch">
+  <span class="switch-handle"></span>
+</div>
+
+<div class="switch active">
+  <span class="switch-handle"></span>
+</div>
+<script>
+  document.querySelectorAll('.switch').forEach(function(node) {
+    node.addEventListener('click', function(e) {
+      let t = e.target.closest('.switch');
+      let active = t.classList.contains('active');
+      active ? t.classList.remove('active') : t.classList.add('active');
+      // do more
+    });
+  });
+</script>
+</body>
+</html>

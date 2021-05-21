@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <title>Progress</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="padding: 1rem">
+<h2>Progress</h2>
+
+<blockquote>
+  Note: The framework only provide style and not interaction with
+  Javascript, how to implement depend on you. for example, if you use React
+  or Vue, you need to wrap this as a component. if you use native
+  javascript, the below have a basic implementation.
+</blockquote>
+
+<div class="progress">
+  <div class="bar"></div>
+</div>
+
+<div style="margin-top: 8px;">
+  <button class="btn" onclick="progress('.bar')">Run</button>
+</div>
+
+<script>
+  function progress(selector) {
+    let el = document.querySelectorAll(selector);
+    let width = 0;
+    let id = setInterval(frame, 100);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        el.forEach(item => {
+          item.style.width = width + '%';
+        });
+      }
+    }
+  }
+</script>
+</body>
+</html>

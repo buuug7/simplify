@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="padding: 1rem;">
+<h2>Modal</h2>
+
+<button id="openModal">open modal</button>
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <div class="title">My modal</div>
+      <button class="close">close</button>
+    </div>
+    <div class="modal-body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+        culpa doloribus, eveniet iure nulla ut! Accusantium asperiores,
+        earum hic ipsum laborum minima molestiae nihil officiis quisquam rem
+        repellat sunt. Ratione.
+      </p>
+      <p>
+        Amet atque aut autem dignissimos distinctio doloribus earum facere
+        fuga, hic illo inventore ipsam iusto modi nihil nobis non obcaecati
+        porro quaerat recusandae repudiandae similique tempore ullam ut vel
+        veritatis?
+      </p>
+    </div>
+  </div>
+</div>
+
+<div>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis
+  delectus dolorem error, harum, incidunt natus placeat provident quasi quia
+  quidem quo recusandae sint soluta veniam veritatis vero voluptas
+  voluptatum?
+</div>
+<div>
+  Corporis eveniet excepturi id laboriosam magnam nulla obcaecati possimus
+  praesentium voluptas voluptatum! A aperiam earum iusto modi pariatur!
+  Autem earum, ex facere ipsum minus necessitatibus nisi nobis possimus sed
+  voluptate!
+</div>
+<div>
+  Adipisci atque commodi cupiditate dicta doloremque, enim excepturi
+  expedita fuga illo illum natus, numquam possimus quas quasi qui quod quos
+  reiciendis repellat saepe sequi similique sint suscipit temporibus vero
+  voluptas.
+</div>
+<div>
+  Architecto consequatur debitis distinctio dolorum earum error
+  exercitationem ipsam labore laborum maiores minima, molestias nesciunt
+  nihil nostrum officia quia recusandae rem saepe sapiente sed sequi sit
+  temporibus veritatis voluptas voluptate?
+</div>
+<div>
+  Ab architecto atque consectetur cumque, dolor dolore dolores eaque eius
+  est eum exercitationem explicabo fugiat fugit, iusto minima natus nostrum
+  numquam officiis quam rem repellat repellendus rerum sapiente suscipit
+  veritatis.
+</div>
+<div>
+  Dolores ea fugit id ipsum, labore molestiae nesciunt nobis odio officia
+  rem sed tenetur vel voluptate. Architecto aspernatur beatae, consectetur,
+  cumque error excepturi harum illo magnam necessitatibus numquam sit
+  voluptates.
+</div>
+<div>
+  Animi autem beatae eaque eius est id incidunt labore magnam molestias
+  neque provident qui quia saepe sunt totam velit, vitae. Accusamus alias
+  animi aut consequatur cupiditate laudantium libero soluta ullam.
+</div>
+<div>
+  Culpa cum delectus dignissimos dolorem fugit libero, molestiae nulla
+  possimus qui quo saepe sequi tempore veritatis? Aliquam amet eligendi est
+  eveniet ipsa nam quas sapiente sint temporibus. Exercitationem, incidunt
+  repellat.
+</div>
+<div>
+  Aliquid animi aperiam assumenda aut blanditiis culpa cupiditate deleniti
+  dolore excepturi exercitationem facere fuga minus modi molestias nisi qui
+  quis, recusandae rerum sed sit sunt tempora ullam, voluptatum? Ducimus,
+  officiis!
+</div>
+<div>
+  Aliquam aliquid aut esse est itaque, iusto maiores repudiandae? Architecto
+  asperiores dignissimos dolore ducimus nobis reprehenderit similique soluta
+  voluptate voluptatum? Amet dolorem, eum facilis magni minima nisi quas
+  saepe voluptatem.
+</div>
+<div>
+  Accusamus, accusantium aliquid assumenda at autem cumque doloremque fuga
+  illo incidunt, inventore maxime nemo nobis odio quidem quos rerum saepe
+  sint unde voluptas voluptates! Culpa eius obcaecati praesentium rerum vel.
+</div>
+<div>
+  At consectetur cumque debitis dignissimos error impedit itaque magni nihil
+  nisi sunt? Impedit laboriosam minus reprehenderit sit. At corporis eum
+  magnam nihil nisi provident, repellendus tempora voluptates. Labore,
+  mollitia perferendis?
+</div>
+<div>
+  Adipisci beatae consequatur cupiditate dolor doloribus ducimus ea
+  excepturi harum id ipsa ipsam itaque iure, laudantium natus nisi nulla
+  officiis quam quod rem repellendus saepe, sint veniam veritatis vero
+  vitae.
+</div>
+<div>
+  Assumenda commodi, delectus explicabo, facilis illum incidunt iure
+  laboriosam laborum minima nobis nulla possimus quas quidem saepe sed
+  sequi, sit ullam ut velit voluptatibus. Culpa error mollitia odio optio
+  quam.
+</div>
+<div>
+  Asperiores ipsum pariatur quasi sit! Aperiam, magni quas. Accusantium aut
+  dolorem incidunt ipsum minima, nam repudiandae tempora veniam vero. Animi
+  dignissimos dolores id illum ipsam quaerat, rerum similique sit
+  temporibus.
+</div>
+<div>
+  Adipisci aut, culpa, distinctio ea excepturi iure laudantium minus modi
+  nihil optio, porro quos reprehenderit sapiente vitae voluptatum. Animi
+  dolorum exercitationem expedita fugiat necessitatibus nemo nobis
+  repudiandae. Asperiores, fugiat, quasi!
+</div>
+
+<script>
+  const openBtn = document.querySelector('#openModal');
+  const modal = document.querySelector('.modal');
+  const closeBtn = document.querySelector('.close');
+
+  openBtn.addEventListener('click', () => {
+    addMask();
+    modal.style.display = 'block';
+    modal.classList.add('show');
+    document.body.classList.add('modal-open');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modal.classList.remove('show');
+    document.body.classList.remove('modal-open');
+    removeMask();
+  });
+
+  function addMask() {
+    const mask = document.createElement('div');
+    mask.className = 'mask show';
+    document.body.appendChild(mask);
+  }
+
+  function removeMask() {
+    const mask = document.querySelector('.mask');
+    document.body.removeChild(mask);
+  }
+</script>
+</body>
+</html>

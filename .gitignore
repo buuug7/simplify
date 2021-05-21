@@ -1,0 +1,13 @@
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+.DS_STORE
+*.log*
+*.imi
+.tmp
+out
+gen
+
+node_modules
+dist

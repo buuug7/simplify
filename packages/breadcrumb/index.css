@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #007bff;
+  --second-color: #e9ecef;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  list-style: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0 1rem 0;
+  background-color: #fff;
+}
+
+.breadcrumb .item > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.breadcrumb .item > a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .item + .item:before {
+  content: '/';
+  padding: 0 0.5rem;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.breadcrumb .item.active {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.breadcrumb.center {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.breadcrumb.right {
+  flex-direction: row;
+  justify-content: flex-end;
+}

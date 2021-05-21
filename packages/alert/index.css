@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color: #007bff;
+  --second-color: #e9ecef;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.alert {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  color: #000;
+  border-radius: 0.25rem;
+  border: 1px solid var(--second-color);
+  background-color: var(--second-color);
+  pointer-events: none;
+}
+
+.alert.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.alert.with-dismiss {
+  padding-right: 3rem;
+}
+
+.alert.with-dismiss::after {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.5rem;
+  content: '×';
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  cursor: pointer;
+  pointer-events: auto;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <title>Snackbar</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="padding: 1rem">
+<h2>Snackbar</h2>
+
+<blockquote>
+  Note: The framework only provide style and not interaction with
+  Javascript, how to implement depend on you. for example, if you use React
+  or Vue, you need to wrap this as a component. if you use native
+  javascript, the below have a basic implementation.
+</blockquote>
+
+<div class="snackbar" id="my-snackbar">Show some message ...</div>
+<button class="btn" onclick="snackbar('#my-snackbar')">
+  Show snackbar
+</button>
+
+<script>
+  function snackbar(selector) {
+    let el = document.querySelector(selector);
+    el.classList.add('show');
+    setTimeout(() => {
+      el.classList.remove('show');
+    }, 3000);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.spinner-crescent {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  user-select: none;
+}
+
+.spinner-crescent svg {
+  left: 0;
+  top: 0;
+  transform-origin: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0px);
+  animation-duration: 750ms;
+  animation: 1s linear 0s infinite normal none running spinner-rotate;
+}
+
+.spinner-crescent circle {
+  fill: transparent;
+  stroke-width: 4px;
+  stroke-dasharray: 128px;
+  stroke-dashoffset: 82px;
+  stroke: currentcolor;
+}
+
+@keyframes spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}

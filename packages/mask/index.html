@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <title>Spinner</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="padding: 1rem;">
+<h2>Mask</h2>
+
+<button id="openMask">show mask</button>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+  architecto debitis dolorum ea exercitationem facilis laudantium nihil
+  porro ut vitae? Ad assumenda cum doloremque eum id non porro soluta unde!
+</p>
+<p>
+  Aperiam corporis dolore dolores, dolorum eaque earum et excepturi fuga
+  illo iusto maxime minus molestias necessitatibus nemo neque nobis odio
+  provident quam reiciendis repellendus similique sint, suscipit vel,
+  voluptate voluptates?
+</p>
+<p>
+  Accusantium asperiores cumque eligendi eveniet fugiat inventore natus quas
+  veritatis? Accusamus aperiam architecto beatae facere nemo officiis qui
+  rem repellendus. Aliquam aperiam assumenda consequatur dicta dolorum, ea
+  nulla quos sapiente!
+</p>
+<p>
+  Alias aliquid culpa, explicabo hic modi necessitatibus nihil obcaecati
+  optio soluta temporibus. Accusamus ad, asperiores autem culpa cum expedita
+  impedit inventore laborum minus modi nulla pariatur placeat repellendus
+  sint veniam!
+</p>
+<p>
+  Aliquid assumenda commodi consequuntur cupiditate debitis dolor enim eum
+  expedita, facilis hic ipsum, magni minima nisi nulla odit omnis
+  praesentium provident quia quidem rem repellendus tempora tempore ullam ut
+  vero.
+</p>
+<p>
+  Aspernatur ipsum laudantium optio placeat provident quae qui sunt vero?
+  Aperiam architecto cupiditate delectus doloribus exercitationem fugit hic
+  id ipsa ipsum iure laboriosam minima, obcaecati porro repellat repellendus
+  ullam vel.
+</p>
+<p>
+  Animi, beatae dolorem, dolores ducimus iusto, mollitia necessitatibus
+  nesciunt odit quo quos reprehenderit sed ut. Blanditiis est, velit.
+  Aspernatur dignissimos dolorem eum fugit harum iste neque quo, quos rem
+  sunt!
+</p>
+<p>
+  At blanditiis consequatur deleniti distinctio dolorem ducimus eaque esse
+  ex exercitationem ipsa labore laborum molestias natus necessitatibus nemo
+  nostrum nulla placeat quam quia quidem, quisquam saepe sint vel vero
+  vitae.
+</p>
+<script>
+  const mask = document.querySelector('.mask');
+  const openMask = document.querySelector('#openMask');
+
+  openMask.addEventListener('click', () => {
+    showMask();
+    document.body.style.overflow = 'hidden';
+  });
+
+  function showMask() {
+    const mask = document.createElement('div');
+    mask.className = 'mask show';
+    document.body.appendChild(mask);
+  }
+</script>
+</body>
+</html>

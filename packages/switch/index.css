@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.switch {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 47px;
+  height: 30px;
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  animation: all 0.2s ease-in-out;
+}
+
+.switch.active {
+  background-color: #6200ee;
+  border-color: rgba(0, 0, 0, 0.01);
+  justify-content: flex-end;
+}
+
+.switch-handle {
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}

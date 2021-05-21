@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.tag {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tag .item {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.tag .item > a {
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0.25rem 0.75rem;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 80%;
+}
+
+.tag .item a:hover {
+  border-color: #ccc;
+  text-decoration: none;
+}
+
+.tag .item.rounded > a {
+  border-radius: 20px;
+}
