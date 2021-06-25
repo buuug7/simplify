@@ -47,7 +47,7 @@ close dismiss alert use javascript
 
 ```javascript
 const alert = document.querySelector('#dismissAlert');
-alert.addEventListener('click', function(e) {
+alert.addEventListener('click', function (e) {
   alert.style.display = 'none';
 });
 ```

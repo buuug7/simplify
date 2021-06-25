@@ -7,4 +7,3 @@ install `@buuug7/simplify-button` package via npm, and then import the `@buuug7/
 ```
 npm install @buuug7/simplify-button
 ```
-
