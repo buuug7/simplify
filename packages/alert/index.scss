@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root {
   --primary-color: #007bff;
   --second-color: #e9ecef;
@@ -30,16 +31,17 @@
 
 .alert.with-dismiss {
   padding-right: 3rem;
-}
-.alert.with-dismiss::after {
-  position: absolute;
-  display: inline-block;
-  font-size: 1.5rem;
-  content: "×";
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.8;
-  cursor: pointer;
-  pointer-events: auto;
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+    content: '×';
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    cursor: pointer;
+    pointer-events: auto;
+  }
 }
