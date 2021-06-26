@@ -14,18 +14,120 @@
     <a href="readme.md">document</a>
 
     <h4>input</h4>
-    <input class="form-control" type="text" />
+    <input class="form-control" type="text" placeholder="placeholder" />
+
+    <h4>input with form text</h4>
+    <input class="form-control" type="text" placeholder="email" />
+    <div id="emailHelp" class="form-text">
+      We never share your email with other.
+    </div>
 
     <h4>input disabled</h4>
-    <input class="form-control" disabled type="text" />
+    <input
+      class="form-control"
+      type="text"
+      placeholder="placeholder"
+      disabled
+    />
 
     <h4>input with label</h4>
     <div class="form-group">
-      <label class="form-label">username</label>
-      <input class="form-control" type="text" />
+      <label class="form-label" for="username">username</label>
+      <input
+        class="form-control"
+        type="text"
+        id="username"
+        placeholder="username"
+      />
     </div>
 
     <h4>input file</h4>
     <input class="form-control" type="file" />
+
+    <h4>textarea</h4>
+    <textarea class="form-control" placeholder="description"></textarea>
+
+    <h4>select</h4>
+    <select class="form-select">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <h4>select multiple</h4>
+    <select class="form-select" multiple>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <h4>select small</h4>
+    <select class="form-select sm">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <h4>Check</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" />
+      <label class="form-check-label"> Default checkbox </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" checked />
+      <label class="form-check-label"> Checked checkbox </label>
+    </div>
+
+    <h4>Check inline</h4>
+    <div class="form-check inline">
+      <input class="form-check-input" type="checkbox" value="" />
+      <label class="form-check-label"> Default checkbox </label>
+    </div>
+    <div class="form-check inline">
+      <input class="form-check-input" type="checkbox" value="" checked />
+      <label class="form-check-label"> Checked checkbox </label>
+    </div>
+
+    <h4>Check disabled</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" disabled />
+      <label class="form-check-label"> Default checkbox </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        disabled
+        checked
+      />
+      <label class="form-check-label"> Checked checkbox </label>
+    </div>
+
+    <h4>Radio</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioName1" />
+      <label class="form-check-label"> Default radio </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioName1" checked />
+      <label class="form-check-label"> Default checked radio </label>
+    </div>
+
+    <h4>Radio disable</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioName2" disabled />
+      <label class="form-check-label"> Default radio </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="radioName2"
+        checked
+        disabled
+      />
+      <label class="form-check-label"> Default checked radio </label>
+    </div>
   </body>
 </html>

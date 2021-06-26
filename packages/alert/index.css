@@ -35,7 +35,7 @@
   position: absolute;
   display: inline-block;
   font-size: 1.5rem;
-  content: '×';
+  content: "×";
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);

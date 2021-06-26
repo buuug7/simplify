@@ -39,7 +39,7 @@
   color: rgba(0, 0, 0, 0.54);
 }
 .breadcrumb .item + .item:before {
-  content: '/';
+  content: "/";
   padding: 0 0.5rem;
   display: inline-block;
   color: rgba(0, 0, 0, 0.54);
