@@ -3,8 +3,8 @@
   "version": "0.0.9",
   "description": "simplify css framework",
   "scripts": {
-    "build": "sass packages --no-source-map",
-    "watch": "sass -w packages --no-source-map"
+    "watch": "sass -w packages --no-source-map",
+    "build": "sass packages --no-source-map"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
