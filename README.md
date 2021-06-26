@@ -9,8 +9,16 @@ compatible. Please forget the fear of being dominated by outdated browsers.
 
 ## usage
 
+Install single package of simplify component library
+
+```bash
+npm install @buuug7/simplify-<component-name>
 ```
-npm install @buuug7/simplify-componentName
+
+Install all the packages of simplify
+
+```bash
+npm install @buuug7/simplify
 ```
 
 ## components
