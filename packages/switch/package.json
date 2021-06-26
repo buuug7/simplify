@@ -1,12 +1,10 @@
 {
   "name": "@buuug7/simplify-switch",
   "version": "0.0.9",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "simplify switch package",
+  "style": "index.css",
+  "scripts": {},
+  "author": "buuug7 <youpp@126.com>",
   "license": "ISC",
   "repository": {
     "type": "git",

@@ -1,11 +1,9 @@
 {
   "name": "@buuug7/simplify-card",
   "version": "0.0.9",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "simplify card package",
+  "style": "index.css",
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "repository": {

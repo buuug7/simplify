@@ -2,26 +2,17 @@
   "name": "@buuug7/simplify-form",
   "version": "0.0.9",
   "description": "simplify form package",
-  "author": "buuug7 <youpp@126.com>",
-  "homepage": "https://github.com/buuug7/simplify#readme",
-  "license": "ISC",
-  "main": "index.css",
   "style": "index.css",
-  "directories": {},
-  "files": [],
+  "scripts": {},
+  "author": "buuug7 <youpp@126.com>",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buuug7/simplify.git",
+    "url": "https://github.com/buuug7/simplify.git",
     "directory": "package/form"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/buuug7/simplify/issues"
   },
   "gitHead": "935446f67eef5674012beb500cd563cef94dab59"
 }

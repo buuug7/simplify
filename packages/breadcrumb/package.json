@@ -2,10 +2,8 @@
   "name": "@buuug7/simplify-breadcrumb",
   "version": "0.0.9",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "style": "index.css",
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "repository": {
