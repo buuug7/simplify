@@ -8,32 +8,290 @@
     />
     <title>Nav</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../form/index.css" />
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #f7f7f7;
+      }
+    </style>
   </head>
   <body style="padding: 1rem">
-    <h2>Nav</h2>
+    <h1>navbar</h1>
+    <hr />
+    <h2>color primary</h2>
+    <div class="navbar">
+      <div class="container">
+        <div class="left">
+          <a class="toggle-btn" id="toggle-btn-1" href="#12">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </a>
 
-    <h4>default</h4>
-    <ul class="nav">
-      <li class="item"><a href="#">chrome</a></li>
-      <li class="item"><a href="#">firefox</a></li>
-      <li class="item"><a href="#">safari</a></li>
-      <li class="item disabled"><a href="#">other</a></li>
-    </ul>
+          <a href="#333" class="title">Simplify</a>
+        </div>
 
-    <h4>center</h4>
-    <ul class="nav center">
-      <li class="item"><a href="#">chrome</a></li>
-      <li class="item"><a href="#">firefox</a></li>
-      <li class="item"><a href="#">safari</a></li>
-      <li class="item disabled"><a href="#">other</a></li>
-    </ul>
+        <div class="content">
+          <ul>
+            <li class="item active"><a href="#1">Music</a></li>
+            <li class="item"><a href="#2">Movies</a></li>
+            <li class="item"><a href="#3">Games</a></li>
+          </ul>
+        </div>
 
-    <h4>right</h4>
-    <ul class="nav right">
-      <li class="item"><a href="#">chrome</a></li>
-      <li class="item"><a href="#">firefox</a></li>
-      <li class="item"><a href="#">safari</a></li>
-      <li class="item disabled"><a href="#">other</a></li>
-    </ul>
+        <div class="right">
+          <a class="item search-btn" id="search-btn-1" href="#123">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="expand-menu">
+        <ul>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Games</a></li>
+        </ul>
+      </div>
+      <div class="search-panel">
+        <input class="form-control" placeholder="Search keyword" type="text" />
+        <span class="search-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <h2>color white</h2>
+    <div class="navbar white">
+      <div class="container">
+        <div class="left">
+          <a class="toggle-btn" id="toggle-btn-2" href="#12">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </a>
+
+          <a href="#333" class="title">Simplify</a>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li class="item active"><a href="#1">Music</a></li>
+            <li class="item"><a href="#2">Movies</a></li>
+            <li class="item"><a href="#3">Games</a></li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <a class="item search-btn" id="search-btn-2" href="#123">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="expand-menu">
+        <ul>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Games</a></li>
+        </ul>
+      </div>
+      <div class="search-panel">
+        <input class="form-control" placeholder="Search keyword" type="text" />
+        <span class="search-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <h2>with shadow</h2>
+    <div class="navbar white shadow">
+      <div class="container">
+        <div class="left">
+          <a class="toggle-btn" id="toggle-btn-3" href="#12">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </a>
+
+          <a href="#333" class="title">Simplify</a>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li class="item active"><a href="#1">Music</a></li>
+            <li class="item"><a href="#2">Movies</a></li>
+            <li class="item"><a href="#3">Games</a></li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <a class="item search-btn" id="search-btn-3" href="#123">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="expand-menu">
+        <ul>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Games</a></li>
+        </ul>
+      </div>
+      <div class="search-panel">
+        <input class="form-control" placeholder="Search keyword" type="text" />
+        <span class="search-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      function initMenuToggle(selector) {
+        const toggleBtn = document.querySelector(selector);
+        toggleBtn.addEventListener('click', () => {
+          const closestNav = toggleBtn.closest('.navbar');
+          const expandMenu = closestNav.querySelector('.expand-menu');
+          const display = window.getComputedStyle(expandMenu).display;
+          display === 'flex'
+            ? (expandMenu.style.display = 'none')
+            : (expandMenu.style.display = 'flex');
+        });
+      }
+
+
+
+      function initSearch(selector) {
+        const searchBtn = document.querySelector(selector);
+
+        let searchPanel;
+        searchBtn.addEventListener('click', (e) => {
+          document.querySelectorAll('.expand-menu').forEach((it) => {
+            it.style.display = 'none';
+          });
+          const closestNav = searchBtn.closest('.navbar');
+          searchPanel = closestNav.querySelector('.search-panel');
+          searchPanel.style.display = 'flex';
+        });
+
+        document.addEventListener('click', (e) => {
+          if (
+            !e.target.closest('.search-panel') &&
+            !e.target.closest('.search-btn') &&
+            searchPanel.style.display === 'flex'
+          ) {
+            searchPanel.style.display = 'none';
+          }
+        });
+      }
+
+      initMenuToggle('#toggle-btn-1');
+      initMenuToggle('#toggle-btn-2');
+      initMenuToggle('#toggle-btn-3');
+
+      initSearch('#search-btn-1');
+      initSearch('#search-btn-2');
+      initSearch('#search-btn-3');
+    </script>
   </body>
 </html>
