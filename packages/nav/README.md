@@ -10,6 +10,8 @@ npm install @buuug7/simplify-nav
 
 ## Usage
 
+> navbar search input require the style of `@buuug7/simplify-form` package.
+
 navbar default with primary color
 
 ```html

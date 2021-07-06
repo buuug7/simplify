@@ -259,8 +259,6 @@
         });
       }
 
-
-
       function initSearch(selector) {
         const searchBtn = document.querySelector(selector);
 
@@ -278,6 +276,7 @@
           if (
             !e.target.closest('.search-panel') &&
             !e.target.closest('.search-btn') &&
+            searchPanel &&
             searchPanel.style.display === 'flex'
           ) {
             searchPanel.style.display = 'none';
