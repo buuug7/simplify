@@ -33,13 +33,13 @@ npm install @buuug7/simplify
 - [breadcrumb](breadcrumb/index.html)
 - [skeleton](skeleton/index.html)
 - [spinner](spinner/index.html)
+- [snackbar](snackbar/index.html)
+- [modal](modal/index.html)
+- [tag](tag/index.html)
 
 ## TODO
 
 - [card](card/index.html)
 - [mask](mask/index.html)
-- [modal](modal/index.html)
-- [snackbar](snackbar/index.html)
 - [star-rating](star-rating/index.html)
 - [switch](switch/index.html)
-- [tag](tag/index.html)
