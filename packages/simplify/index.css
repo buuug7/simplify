@@ -536,6 +536,11 @@
   padding: 0 1rem;
   margin: auto;
 }
+@media (max-width: 600px) {
+  .navbar .container {
+    padding: 0 0.5rem;
+  }
+}
 .navbar a {
   text-decoration: none;
   color: #fff;
@@ -579,12 +584,9 @@
   }
 }
 .navbar .content ul {
-  list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 .navbar .content li {
   opacity: 0.75;
@@ -632,26 +634,6 @@
   left: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
-}
-.navbar .search-panel .close {
-  display: inline-flex;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 20;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 0 0.75rem;
-  background: #007bff;
-  font-weight: 300;
-}
-.navbar .search-panel .close > * {
-  width: 24px;
-  height: 24px;
 }
 
 .navbar.shadow {
