@@ -1,3 +1,8 @@
+$primary-color: #000;
+
+$size: 1.5rem;
+$border-length: 2px;
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -6,16 +11,17 @@
     transform: rotate(360deg);
   }
 }
+
 .spinner {
   display: inline-flex;
   position: relative;
-  content: "";
+  content: '';
   margin: 2px;
   border-radius: 100%;
-  border: 2px solid #000;
+  border: $border-length solid $primary-color;
   border-bottom-color: transparent;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: $size;
+  width: $size;
   background: transparent;
   animation: rotate 0.75s 0s linear infinite;
 }
