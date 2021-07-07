@@ -25,7 +25,7 @@ npm install @buuug7/simplify
 - [alert](./packages/alert/README.md)
 - [badge](./packages/badge/README.md)
 - [breadcrumb](./packages/breadcrumb/README.md)
-- [button](./packages/button/README.md)
+- [button](./button/index.html)
 - [card](./packages/card/README.md)
 - [form](./packages/form/README.md)
 - [mask](./packages/mask/README.md)
