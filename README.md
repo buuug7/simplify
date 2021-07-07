@@ -22,15 +22,15 @@ npm install @buuug7/simplify
 
 ## components
 
+- [button](./packages/button/README.md)
+- [form](./packages/form/README.md)
+- [nav](./packages/nav/README.md)
 - [alert](./packages/alert/README.md)
 - [badge](./packages/badge/README.md)
 - [breadcrumb](./packages/breadcrumb/README.md)
-- [button](./packages/button/README.md)
 - [card](./packages/card/README.md)
-- [form](./packages/form/README.md)
 - [mask](./packages/mask/README.md)
 - [modal](./packages/modal/README.md)
-- [nav](./packages/nav/README.md)
 - [progress](./packages/progress/README.md)
 - [skeleton](./packages/skeleton/README.md)
 - [snackbar](./packages/snackbar/README.md)

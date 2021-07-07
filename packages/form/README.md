@@ -8,6 +8,9 @@ install `@buuug7/simplify-form` package via npm, and then import the `@buuug7/si
 npm install @buuug7/simplify-form
 ```
 
+
+[Demo examples](https://buuug7.github.io/simplify/form/index.html)
+
 ## Usage
 
 input
