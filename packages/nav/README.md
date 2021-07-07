@@ -2,11 +2,13 @@
 
 ## install
 
-install `@buuug7/simplify-nav` package via npm, and then import the `@buuug7/simplify-nav/index.css` file.
+install `@buuug7/simplify-nav` package via npm, and then import from `@buuug7/simplify-nav/index.css` file.
 
 ```
 npm install @buuug7/simplify-nav
 ```
+
+[Demo examples](https://buuug7.github.io/simplify/nav/index.html)
 
 ## Usage
 
