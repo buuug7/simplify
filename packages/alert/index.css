@@ -1,9 +1,4 @@
 @charset "UTF-8";
-:root {
-  --primary-color: #007bff;
-  --second-color: #e9ecef;
-}
-
 *,
 *::before,
 *::after {
@@ -17,15 +12,15 @@
   margin-bottom: 1rem;
   color: #000;
   border-radius: 0.25rem;
-  border: 1px solid var(--second-color);
-  background-color: var(--second-color);
+  border: 1px solid #e9ecef;
+  background-color: #e9ecef;
   pointer-events: none;
 }
 
 .alert.primary {
-  background-color: var(--primary-color);
+  background-color: #007bff;
   color: #fff;
-  border-color: var(--primary-color);
+  border-color: #007bff;
 }
 
 .alert.with-dismiss {

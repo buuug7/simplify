@@ -6,6 +6,8 @@ A simplified, opinionated CSS component library. We only support the latest brow
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
+> Note: The framework only provide style and basic interaction with raw Javascript, how to integrate with other framework is depending on you. for example, if you use React or Vue, you need to wrap this as a component. some components already have a basic implementation use raw javascript.
+
 ## usage
 
 Install single package of simplify component library
@@ -26,12 +28,12 @@ npm install @buuug7/simplify
 - [form](./packages/form/README.md)
 - [nav](./packages/nav/README.md)
 - [alert](./packages/alert/README.md)
+- [progress](./packages/progress/README.md)
 - [badge](./packages/badge/README.md)
 - [breadcrumb](./packages/breadcrumb/README.md)
 - [card](./packages/card/README.md)
 - [mask](./packages/mask/README.md)
 - [modal](./packages/modal/README.md)
-- [progress](./packages/progress/README.md)
 - [skeleton](./packages/skeleton/README.md)
 - [snackbar](./packages/snackbar/README.md)
 - [spinner](./packages/spinner/README.md)

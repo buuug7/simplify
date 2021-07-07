@@ -2,11 +2,13 @@
 
 ## Install
 
-install `@buuug7/simplify-alert` package via npm, and then import the `@buuug7/simplify-alert/index.css` file.
+install `@buuug7/simplify-alert` package via npm, and then import from `@buuug7/simplify-alert/index.css` file.
 
 ```
 npm install @buuug7/simplify-alert
 ```
+
+[Demo examples](https://buuug7.github.io/simplify/alert/index.html)
 
 ## Usage
 

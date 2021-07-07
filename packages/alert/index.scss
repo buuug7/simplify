@@ -1,9 +1,5 @@
-@charset "UTF-8";
-
-:root {
-  --primary-color: #007bff;
-  --second-color: #e9ecef;
-}
+$primary-color: #007bff;
+$second-color: #e9ecef;
 
 *,
 *::before,
@@ -18,15 +14,15 @@
   margin-bottom: 1rem;
   color: #000;
   border-radius: 0.25rem;
-  border: 1px solid var(--second-color);
-  background-color: var(--second-color);
+  border: 1px solid $second-color;
+  background-color: $second-color;
   pointer-events: none;
 }
 
 .alert.primary {
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   color: #fff;
-  border-color: var(--primary-color);
+  border-color: $primary-color;
 }
 
 .alert.with-dismiss {
