@@ -30,16 +30,17 @@ npm install @buuug7/simplify
 - [alert](./packages/alert/README.md)
 - [progress](./packages/progress/README.md)
 - [badge](./packages/badge/README.md)
+- [breadcrumb](./packages/breadcrumb/README.md)
+- [skeleton](./packages/skeleton/README.md)
+- [spinner](./packages/spinner/README.md)
 
 ## todo
 
-- [breadcrumb](./packages/breadcrumb/README.md)
 - [card](./packages/card/README.md)
 - [mask](./packages/mask/README.md)
 - [modal](./packages/modal/README.md)
-- [skeleton](./packages/skeleton/README.md)
 - [snackbar](./packages/snackbar/README.md)
-- [spinner](./packages/spinner/README.md)
+
 - [star-rating](./packages/star-rating/README.md)
 - [switch](./packages/switch/README.md)
 - [tag](./packages/tag/README.md)

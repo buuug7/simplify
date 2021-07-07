@@ -6,6 +6,8 @@ A simplified, opinionated CSS component library. We only support the latest brow
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
+> Note: The framework only provide style and basic interaction with raw Javascript, how to integrate with other framework is depending on you. for example, if you use React or Vue, you need to wrap this as a component. some components already have a basic implementation use raw javascript.
+
 ## usage
 
 Install single package of simplify component library
@@ -29,12 +31,15 @@ npm install @buuug7/simplify
 - [progress](progress/index.html)
 - [badge](badge/index.html)
 - [breadcrumb](breadcrumb/index.html)
+- [skeleton](skeleton/index.html)
+- [spinner](spinner/index.html)
+
+## TODO
+
 - [card](card/index.html)
 - [mask](mask/index.html)
 - [modal](modal/index.html)
-- [skeleton](skeleton/index.html)
 - [snackbar](snackbar/index.html)
-- [spinner](spinner/index.html)
 - [star-rating](star-rating/index.html)
 - [switch](switch/index.html)
 - [tag](tag/index.html)
