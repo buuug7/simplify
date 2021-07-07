@@ -1,6 +1,6 @@
 # simplify snackbar
 
-## install
+## Install
 
 install `@buuug7/simplify-snackbar` package via npm, and then import from `@buuug7/simplify-snackbar/index.css` file.
 
@@ -10,7 +10,7 @@ npm install @buuug7/simplify-snackbar
 
 [Demo examples](https://buuug7.github.io/simplify/snackbar/index.html)
 
-## usage
+## Usage
 
 ```html
 <div class="snackbar" id="my-snackbar">

@@ -1,6 +1,6 @@
 # simplify form
 
-## install
+## Install
 
 install `@buuug7/simplify-form` package via npm, and then import the `@buuug7/simplify-form/index.css` file.
 

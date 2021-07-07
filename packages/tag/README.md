@@ -12,7 +12,7 @@
   	</a>
  </p>
 
-## install
+## Install
 
 install `@buuug7/simplify-tag` package via npm, and then import from `@buuug7/simplify-tag/index.css` file.
 
@@ -22,7 +22,7 @@ npm install @buuug7/simplify-tag
 
 [Demo examples](https://buuug7.github.io/simplify/tag/index.html)
 
-## usage
+## Usage
 
 
 ```html

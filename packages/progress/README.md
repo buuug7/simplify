@@ -1,6 +1,6 @@
 # simplify progress
 
-## install
+## Install
 
 install `@buuug7/simplify-progress` package via npm, and then import from `@buuug7/simplify-progress/index.css` file.
 
@@ -10,7 +10,7 @@ npm install @buuug7/simplify-progress
 
 [Demo examples](https://buuug7.github.io/simplify/progress/index.html)
 
-## usage
+## Usage
 
 ```html
 <div class="progress">

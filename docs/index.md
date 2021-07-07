@@ -8,7 +8,7 @@ A simplified, opinionated CSS component library. We only support the latest brow
 
 > Note: The framework only provide style and basic interaction with raw Javascript, how to integrate with other framework is depending on you. for example, if you use React or Vue, you need to wrap this as a component. some components already have a basic implementation use raw javascript.
 
-## usage
+## Usage
 
 Install single package of simplify component library
 
@@ -36,10 +36,10 @@ npm install @buuug7/simplify
 - [snackbar](snackbar/index.html)
 - [modal](modal/index.html)
 - [tag](tag/index.html)
+- [card](card/index.html)
 
 ## TODO
 
-- [card](card/index.html)
 - [mask](mask/index.html)
 - [star-rating](star-rating/index.html)
 - [switch](switch/index.html)

@@ -11,29 +11,27 @@
   flex-direction: column;
   background-color: #fff;
 }
-
-.card .card-header {
-  padding: 0.75rem 1rem;
+.card .header {
+  padding: 0.75rem 0.75rem;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.card .card-header.with-img {
+.card .header.with-img {
   padding: 0;
   border: none;
 }
-
-.card .card-header.with-img > img {
+.card .header.with-img > img {
   width: 100%;
   max-width: 100%;
 }
-
-.card .card-body {
-  padding: 1rem;
+.card .body {
+  padding: 0.75rem 0.75rem;
 }
-
-.card .card-footer {
-  padding: 0.75rem 1rem;
+.card .body h4, .card .body h5 {
+  margin: 8px 0;
+}
+.card .footer {
+  padding: 0.75rem 0.75rem;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

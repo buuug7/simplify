@@ -1,6 +1,6 @@
 # simplify modal
 
-## install
+## Install
 
 install `@buuug7/simplify-modal` package via npm, and then import from `@buuug7/simplify-modal/index.css` file.
 
@@ -10,7 +10,7 @@ npm install @buuug7/simplify-modal
 
 [Demo examples](https://buuug7.github.io/simplify/modal/index.html)
 
-## usage
+## Usage
 
 default
 

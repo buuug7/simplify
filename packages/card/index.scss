@@ -1,0 +1,47 @@
+$primary-color: #007bff;
+$second-color: 1px solid rgba(0, 0, 0, 0.1);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$padding: 0.75rem 0.75rem;
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #fff;
+
+  .header {
+    padding: $padding;
+    width: 100%;
+    border-bottom: $second-color;
+
+    &.with-img {
+      padding: 0;
+      border: none;
+      > img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .body {
+    padding: $padding;
+
+    h4, h5 {
+      margin: 8px 0;
+    }
+  }
+
+  .footer {
+    padding: $padding;
+    text-align: center;
+    border-top: $second-color;
+  }
+}

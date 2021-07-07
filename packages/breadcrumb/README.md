@@ -1,6 +1,6 @@
 # simplify breadcrumb
 
-## install
+## Install
 
 install `@buuug7/simplify-breadcrumb` package via npm, and then import from `@buuug7/simplify-breadcrumb/index.css` file.
 
@@ -10,7 +10,7 @@ npm install @buuug7/simplify-breadcrumb
 
 [Demo examples](https://buuug7.github.io/simplify/breadcrumb/index.html)
 
-## usage
+## Usage
 
 default
 

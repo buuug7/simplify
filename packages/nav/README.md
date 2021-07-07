@@ -1,6 +1,6 @@
 # simplify nav
 
-## install
+## Install
 
 install `@buuug7/simplify-nav` package via npm, and then import from `@buuug7/simplify-nav/index.css` file.
 

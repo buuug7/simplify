@@ -12,7 +12,7 @@
   	</a>
  </p>
 
-## install
+## Install
 
 install `@buuug7/simplify-button` package via npm, and then import from `@buuug7/simplify-button/index.css` file.
 
@@ -22,7 +22,7 @@ npm install @buuug7/simplify-button
 
 [Demo examples](https://buuug7.github.io/simplify/button/index.html)
 
-## usage
+## Usage
 
 default
 

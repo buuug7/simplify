@@ -36,10 +36,10 @@ npm install @buuug7/simplify
 - [snackbar](./packages/snackbar/README.md)
 - [modal](./packages/modal/README.md)
 - [tag](./packages/tag/README.md)
+- [card](./packages/card/README.md)
 
 ## todo
 
-- [card](./packages/card/README.md)
 - [mask](./packages/mask/README.md)
 - [star-rating](./packages/star-rating/README.md)
 - [switch](./packages/switch/README.md)
