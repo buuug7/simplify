@@ -1,5 +1,17 @@
 # simplify badge
 
+ <p>
+    <a href="https://www.npmjs.com/package/@buuug7/simplify-badge?minimal=true">
+        <img src="https://img.shields.io/npm/v/@buuug7/simplify-badge.svg" alt="npm version">
+  	</a>
+  	<a href="https://npmcharts.com/compare/@buuug7/simplify-badge?minimal=true">
+  	    <img src="https://img.shields.io/npm/dm/@buuug7/simplify-badge.svg" alt="npm downloads"> 
+  	</a>
+  	<a href="#">
+  	   <img src="https://img.shields.io/bundlephobia/min/@buuug7/simplify-badge.svg" alt="minified size"/>
+  	</a>
+ </p>
+
 ## install
 
 install `@buuug7/simplify-badge` package via npm, and then import from `@buuug7/simplify-badge/index.css` file.
