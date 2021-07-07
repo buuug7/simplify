@@ -45,19 +45,6 @@ $second-color: #e9ecef;
     padding: 0;
   }
 
-  .left {
-    display: flex;
-    align-items: center;
-
-    @media (max-width: 600px) {
-      flex-grow: 1;
-      .title {
-        text-align: center;
-        flex-grow: 1;
-      }
-    }
-  }
-
   .toggle-btn {
     display: inline-flex;
     align-items: center;
@@ -74,7 +61,7 @@ $second-color: #e9ecef;
     }
   }
 
-  .title {
+  .brand {
     color: #fff;
     font-size: 1.1rem;
     margin-left: 0.25rem;

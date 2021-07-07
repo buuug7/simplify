@@ -548,19 +548,6 @@
   margin: 0;
   padding: 0;
 }
-.navbar .left {
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 600px) {
-  .navbar .left {
-    flex-grow: 1;
-  }
-  .navbar .left .title {
-    text-align: center;
-    flex-grow: 1;
-  }
-}
 .navbar .toggle-btn {
   display: inline-flex;
   align-items: center;
@@ -574,7 +561,7 @@
 .navbar .toggle-btn:hover {
   background: #4da3ff;
 }
-.navbar .title {
+.navbar .brand {
   color: #fff;
   font-size: 1.1rem;
   margin-left: 0.25rem;
