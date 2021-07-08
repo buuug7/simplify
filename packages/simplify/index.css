@@ -393,12 +393,6 @@
   margin-right: 1rem;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .mask {
   box-sizing: border-box;
   position: fixed;
