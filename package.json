@@ -1,6 +1,6 @@
 {
   "name": "@buuug7/simplify",
-  "version": "0.0.9",
+  "version": "0.1.2",
   "description": "simplify css framework",
   "scripts": {
     "watch": "sass -w packages --no-source-map",
