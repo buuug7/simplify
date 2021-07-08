@@ -38,8 +38,8 @@ npm install @buuug7/simplify
 - [tag](./packages/tag/README.md)
 - [card](./packages/card/README.md)
 - [switch](./packages/switch/README.md)
+- [star-rating](./packages/star-rating/README.md)
 
 ## TODO
 
 - [mask](./packages/mask/README.md)
-- [star-rating](./packages/star-rating/README.md)

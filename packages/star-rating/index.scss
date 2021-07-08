@@ -1,0 +1,42 @@
+$primary-color: #007bff;
+$second-color: #e9ecef;
+
+$star-size: 1.5rem;
+$star-size-lg: 2rem;
+$star-bg: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktc3RhciIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNMi44NjYgMTQuODVjLS4wNzguNDQ0LjM2Ljc5MS43NDYuNTkzbDQuMzktMi4yNTYgNC4zODkgMi4yNTZjLjM4Ni4xOTguODI0LS4xNDkuNzQ2LS41OTJsLS44My00LjczIDMuNTIyLTMuMzU2Yy4zMy0uMzE0LjE2LS44ODgtLjI4Mi0uOTVsLTQuODk4LS42OTZMOC40NjUuNzkyYS41MTMuNTEzIDAgMCAwLS45MjcgMEw1LjM1NCA1LjEybC00Ljg5OC42OTZjLS40NDEuMDYyLS42MTIuNjM2LS4yODMuOTVsMy41MjMgMy4zNTYtLjgzIDQuNzN6bTQuOTA1LTIuNzY3LTMuNjg2IDEuODk0LjY5NC0zLjk1N2EuNTY1LjU2NSAwIDAgMC0uMTYzLS41MDVMMS43MSA2Ljc0NWw0LjA1Mi0uNTc2YS41MjUuNTI1IDAgMCAwIC4zOTMtLjI4OEw4IDIuMjIzbDEuODQ3IDMuNjU4YS41MjUuNTI1IDAgMCAwIC4zOTMuMjg4bDQuMDUyLjU3NS0yLjkwNiAyLjc3YS41NjUuNTY1IDAgMCAwLS4xNjMuNTA2bC42OTQgMy45NTctMy42ODYtMS44OTRhLjUwMy41MDMgMCAwIDAtLjQ2MSAweiIvPgo8L3N2Zz4K");
+$star-bg-fill: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktc3Rhci1maWxsIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0zLjYxMiAxNS40NDNjLS4zODYuMTk4LS44MjQtLjE0OS0uNzQ2LS41OTJsLjgzLTQuNzNMLjE3MyA2Ljc2NWMtLjMyOS0uMzE0LS4xNTgtLjg4OC4yODMtLjk1bDQuODk4LS42OTZMNy41MzguNzkyYy4xOTctLjM5LjczLS4zOS45MjcgMGwyLjE4NCA0LjMyNyA0Ljg5OC42OTZjLjQ0MS4wNjIuNjEyLjYzNi4yODIuOTVsLTMuNTIyIDMuMzU2LjgzIDQuNzNjLjA3OC40NDMtLjM2Ljc5LS43NDYuNTkyTDggMTMuMTg3bC00LjM4OSAyLjI1NnoiLz4KPC9zdmc+");
+
+.star {
+  box-sizing: border-box;
+  width: $star-size;
+  height: $star-size;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  mask-image: $star-bg;
+  -webkit-mask-image: $star-bg;
+  background-color: $primary-color;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  display: inline-flex;
+
+  &.fill {
+    mask-image: $star-bg-fill;
+    -webkit-mask-image: $star-bg-fill;
+  }
+
+  &.lg {
+    width: $star-size-lg;
+    height: $star-size-lg;
+  }
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row;
+
+  .star + .star {
+    margin-left: 0.25rem;
+  }
+}

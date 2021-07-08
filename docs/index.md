@@ -38,9 +38,10 @@ npm install @buuug7/simplify
 - [tag](tag/index.html)
 - [card](card/index.html)
 - [switch](switch/index.html)
+- [star-rating](star-rating/index.html)
 
 ## TODO
 
 - [mask](mask/index.html)
-- [star-rating](star-rating/index.html)
+
 
