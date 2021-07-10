@@ -1,10 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .btn {
+  box-sizing: border-box;
   position: relative;
   display: inline-block;
   font-weight: 400;
@@ -21,6 +16,12 @@
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn img, .btn svg {
+  display: inline-flex;
+  vertical-align: -0.125em;
+  width: 1em;
+  height: 1em;
 }
 .btn:hover {
   text-decoration: none;

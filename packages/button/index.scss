@@ -1,13 +1,8 @@
 $primary-color: #007bff;
 $second-color: #e9ecef;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .btn {
+  box-sizing: border-box;
   position: relative;
   display: inline-block;
   font-weight: 400;
@@ -25,6 +20,13 @@ $second-color: #e9ecef;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  img, svg {
+    display: inline-flex;
+    vertical-align: -.125em;;
+    width: 1em;
+    height: 1em;
+  }
 
   &:hover {
     text-decoration: none;

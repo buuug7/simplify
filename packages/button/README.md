@@ -27,7 +27,7 @@ npm install @buuug7/simplify-button
 default
 
 ```html
-<button class="btn">BUTTON</button> <button class="btn small">SMALL</button>
+<button class="btn">BUTTON</button>
 ```
 
 small
