@@ -28,6 +28,7 @@ npm install @buuug7/simplify
 - [form](packages/form/README.md)
 - [nav](packages/nav/README.md)
 - [pagination](packages/pagination/README.md)
+- [drawer](packages/drawer/README.md)
 - [alert](packages/alert/README.md)
 - [progress](packages/progress/README.md)
 - [badge](packages/badge/README.md)

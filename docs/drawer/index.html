@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-drawer@latest/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-button@latest/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-mask@latest/index.css" />
+  </head>
+  <body style="background-color: #f7f7f7; padding: 1rem">
+    <p>Note: The button style is from `@buuug7/simplify-button` package</p>
+    <p>Note: The mask style is from `@buuug7/simplify-mask` package</p>
+    <p>
+      <button id="show-drawer-1" class="btn" data-drawer="#drawer-1">
+        show drawer
+      </button>
+    </p>
+    <div class="drawer" id="drawer-1">
+      <div class="header">
+        <h4 class="title">simplify drawer</h4>
+        <button class="btn btn-close">close</button>
+      </div>
+      <div class="body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+        architecto beatae consectetur dolorem, doloremque dolores ducimus eaque
+        earum, ex ipsam itaque iusto neque, quaerat quasi quisquam rem sit sunt
+        voluptatem.
+      </div>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+        architecto assumenda aut dolor dolores dolorum eos excepturi expedita,
+        explicabo facere laborum minima minus nesciunt numquam, porro quae quas
+        quos voluptate.
+      </p>
+      <p>
+        Culpa dolorem et hic ipsum obcaecati provident, sunt tempore? Aliquid at
+        eum perferendis possimus quam, repudiandae soluta. Adipisci alias,
+        aliquam assumenda dolore ex facilis libero necessitatibus neque optio
+        quam, ullam.
+      </p>
+      <p>
+        Accusamus animi asperiores blanditiis commodi earum eius facere ipsam
+        minus nam necessitatibus nihil nulla, odio perferendis praesentium quas
+        quod repellendus sapiente sit sunt suscipit temporibus ut voluptatibus.
+        Modi, nemo, nisi?
+      </p>
+      <p>
+        Adipisci amet ea est fugit illum nobis quaerat quam ullam vero
+        voluptatibus. Ab eligendi incidunt quo voluptatem. Alias cupiditate
+        dolor illum itaque natus officia optio porro quaerat repellendus
+        suscipit? Necessitatibus!
+      </p>
+      <p>
+        Accusamus animi aspernatur commodi corporis dicta esse excepturi
+        expedita harum illum, in maiores maxime nam numquam odio odit officia
+        quas quis quos reprehenderit, rerum sint soluta tempora, velit veniam
+        vero.
+      </p>
+      <p>
+        Beatae cum dicta libero magnam minus odit quidem quod reiciendis ut. A,
+        accusamus animi enim error expedita libero magnam maiores natus non
+        praesentium reprehenderit ullam! Blanditiis culpa praesentium reiciendis
+        vel.
+      </p>
+      <p>
+        Ab ad adipisci amet animi atque delectus dicta doloremque dolores
+        dolorum eaque excepturi expedita explicabo fuga illo iste magnam modi
+        omnis pariatur quas quia quisquam, repellendus rerum sed velit
+        voluptatem.
+      </p>
+      <p>
+        Aliquid, atque inventore officiis pariatur perspiciatis reprehenderit
+        saepe sit vel. Dolore fugit laboriosam nam placeat quaerat quas, quasi
+        temporibus unde? Consequuntur delectus, iste nemo rem reprehenderit
+        sapiente tempora veniam? Debitis?
+      </p>
+      <p>
+        Aspernatur atque autem consectetur dolor dolorem earum fuga illo ipsa
+        ipsum iusto laudantium mollitia nam nostrum numquam obcaecati pariatur
+        perferendis placeat porro quidem recusandae saepe sapiente sed, tempora
+        temporibus vitae.
+      </p>
+      <p>
+        Aspernatur atque consequuntur dolorem eius fuga ipsa. Aspernatur dolor
+        dolores illo inventore perspiciatis quam ullam. Amet assumenda cum
+        debitis iste, labore molestias nostrum odio pariatur rem repellendus
+        saepe sunt, voluptates.
+      </p>
+      <p>
+        A aliquid asperiores, harum hic, id magni necessitatibus officia
+        possimus quis reiciendis repudiandae temporibus! Autem delectus deleniti
+        dolore dolorem earum in itaque provident, quasi quidem quos? Beatae
+        delectus iure maxime.
+      </p>
+      <p>
+        Aperiam aut commodi consectetur consequatur consequuntur distinctio
+        dolorum eos error exercitationem illum, iure magnam magni maiores minus
+        nesciunt optio placeat, quisquam recusandae repellendus saepe soluta
+        tempore tenetur vero voluptas voluptatum.
+      </p>
+      <p>
+        Deleniti excepturi, neque non quis quisquam voluptatem voluptatibus! A
+        accusantium architecto dicta dolorum et excepturi id illo iste itaque
+        magni maiores maxime minus necessitatibus obcaecati officiis, quod totam
+        ut voluptates.
+      </p>
+      <p>
+        Ad aliquam, aliquid aspernatur blanditiis commodi cumque dicta ea esse
+        expedita explicabo incidunt minima natus neque nisi officia pariatur
+        perferendis quia quidem quis ratione, rerum similique sint sit unde
+        voluptatibus!
+      </p>
+      <p>
+        Architecto debitis dolorem ducimus error eum harum incidunt iusto,
+        laboriosam, nam numquam odio possimus reiciendis voluptas! Cumque id
+        ipsum quasi! Aut incidunt nobis quas quos sapiente similique sint vitae?
+        Iste.
+      </p>
+    </div>
+    <script>
+      initDrawer("#show-drawer-1");
+
+      function initDrawer(selector) {
+        const showDrawerBtn = document.querySelector(selector);
+        let mask;
+        showDrawerBtn.addEventListener("click", () => {
+          drawer.classList.remove("hide");
+          drawer.classList.add("show");
+          mask = showMask();
+        });
+
+        const drawer = document.querySelector(showDrawerBtn.dataset.drawer);
+        const close = drawer.querySelector(".btn-close");
+
+        close.addEventListener("click", () => {
+          drawer.classList.add("hide");
+        });
+
+        drawer.addEventListener("transitionend", (e) => {
+          const target = e.target;
+          const contains = target.classList.contains("hide");
+          if (contains) {
+            drawer.classList.remove("hide");
+            drawer.classList.remove("show");
+            mask.close();
+          }
+        });
+        return drawer;
+      }
+
+      function showMask() {
+        const mask = document.createElement("div");
+        mask.className = "mask";
+        document.body.appendChild(mask);
+        document.body.style.overflow = "hidden";
+        setTimeout(() => {
+          mask.classList.add("show");
+        }, 0);
+
+        const close = (() => {
+          // remove mask after transition end
+          mask.addEventListener("transitionend", (e) => {
+            const target = e.target;
+            const contains = target.classList.contains("hide");
+            if (contains) {
+              document.body.removeChild(mask);
+              document.body.style.overflow = "auto";
+            }
+          });
+
+          return () => {
+            mask.classList.remove("show");
+            mask.classList.add("hide");
+          };
+        })();
+
+        return { instance: mask, close };
+      }
+    </script>
+  </body>
+</html>

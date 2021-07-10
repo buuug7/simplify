@@ -29,6 +29,7 @@ npm install @buuug7/simplify
 - [form](form/index.html)
 - [nav](nav/index.html)
 - [pagination](pagination/index.html)
+- [drawer](drawer/index.html)
 - [alert](alert/index.html)
 - [progress](progress/index.html)
 - [badge](badge/index.html)

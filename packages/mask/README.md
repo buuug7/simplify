@@ -28,20 +28,41 @@ interact with javascript
 
 ```javascript
 document.querySelector("#openMask").addEventListener("click", () => {
-  // disable scroll
-  document.body.style.overflow = "hidden";
-  showMask();
+  let { instance, close } = showMask();
+  
+  // close mask 
+  instance.addEventListener("click", () => {
+    close();
+  });
 });
 
 function showMask() {
   const mask = document.createElement("div");
-  mask.className = "mask show";
+  mask.className = "mask";
   document.body.appendChild(mask);
+  document.body.style.overflow = "hidden";
+  setTimeout(() => {
+    mask.classList.add("show");
+  }, 0);
 
-  // optional
-  // click mask to remove
-  mask.addEventListener("click", () => {
-    document.body.removeChild(mask);
-  });
+  const close = (() => {
+    // remove mask after transition end
+    mask.addEventListener("transitionend", (e) => {
+      const target = e.target;
+      const contains = target.classList.contains("hide");
+      if (contains) {
+        document.body.removeChild(mask);
+        document.body.style.overflow = "auto";
+      }
+    });
+
+    return () => {
+      mask.classList.remove("show");
+      mask.classList.add("hide");
+    };
+  })();
+
+  return { instance: mask, close };
 }
+
 ```
