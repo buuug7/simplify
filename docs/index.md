@@ -24,9 +24,11 @@ npm install @buuug7/simplify
 
 ## components
 
+
 - [button](button/index.html)
-- [nav](nav/index.html)
 - [form](form/index.html)
+- [nav](nav/index.html)
+- [pagination](pagination/index.html)
 - [alert](alert/index.html)
 - [progress](progress/index.html)
 - [badge](badge/index.html)
