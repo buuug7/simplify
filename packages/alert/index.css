@@ -1,13 +1,7 @@
 @charset "UTF-8";
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .alert {
-  position: relative;
   box-sizing: border-box;
+  position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   color: #000;

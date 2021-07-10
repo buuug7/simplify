@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .breadcrumb {
   box-sizing: border-box;
   display: flex;

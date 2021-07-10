@@ -1,13 +1,8 @@
 $primary-color: #007bff;
 $second-color: #e9ecef;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .navbar {
+  box-sizing: border-box;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -15,11 +10,11 @@ $second-color: #e9ecef;
   width: 100%;
   min-height: 44px;
   overflow: hidden;
-  box-sizing: border-box;
   background: #3880ff;
   margin-bottom: 1rem;
 
   .container {
+    box-sizing: border-box;
     width: 100%;
     min-height: 44px;
     display: flex;

@@ -1,13 +1,8 @@
 $primary-color: #007bff;
 $second-color: #e9ecef;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .snackbar {
+  box-sizing: border-box;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.84);
   color: #fff;

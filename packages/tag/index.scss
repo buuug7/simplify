@@ -1,12 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .tag {
   list-style: none;
   padding-left: 0;
+  box-sizing: border-box;
 
   .item {
     display: inline-block;

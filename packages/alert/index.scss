@@ -1,15 +1,9 @@
 $primary-color: #007bff;
 $second-color: #e9ecef;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .alert {
-  position: relative;
   box-sizing: border-box;
+  position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   color: #000;
