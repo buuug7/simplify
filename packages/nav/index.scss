@@ -108,22 +108,37 @@ $second-color: #e9ecef;
   }
 
   .expand-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
+    transition: max-height .15s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+
     li {
       width: 100%;
       text-align: center;
       border-top: 1px solid $primary-color;
       padding: 0.4rem 1rem;
     }
+
+    &.hide {
+      visibility: hidden;
+      opacity: 0;
+      max-height: 0;
+    }
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   .search-panel {
+    display: none;
     position: absolute;
+    align-items: center;
     z-index: 10;
     width: 100%;
-    display: none;
-    align-items: center;
     height: 100%;
 
     input {

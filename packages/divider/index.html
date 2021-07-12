@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Divider</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      .list {
+        display: inline-flex;
+        border: 1px solid #ddd;
+      }
+
+      .list .item {
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body style="padding: 1rem">
+    <h2>Divider</h2>
+
+    <h4>horizontal</h4>
+    <hr class="divider" />
+
+    <h4>vertical</h4>
+    <div class="list">
+      <div class="item">IOS</div>
+      <div class="item">Android</div>
+      <hr class="divider v" />
+      <div class="item">OSX</div>
+      <div class="item">Windows</div>
+      <div class="item">Linux</div>
+    </div>
+  </body>
+</html>

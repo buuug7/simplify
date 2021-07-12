@@ -343,8 +343,11 @@ html {
   padding: 0.5rem 0.25rem;
 }
 .navbar .expand-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
+  transition: max-height 0.15s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
 .navbar .expand-menu li {
   width: 100%;
@@ -352,12 +355,21 @@ html {
   border-top: 1px solid #007bff;
   padding: 0.4rem 1rem;
 }
+.navbar .expand-menu.hide {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+}
+.navbar .expand-menu.show {
+  visibility: visible;
+  opacity: 1;
+}
 .navbar .search-panel {
+  display: none;
   position: absolute;
+  align-items: center;
   z-index: 10;
   width: 100%;
-  display: none;
-  align-items: center;
   height: 100%;
 }
 .navbar .search-panel input {

@@ -58,36 +58,10 @@
       nostrum nulla placeat quam quia quidem, quisquam saepe sint vel vero
       vitae.
     </p>
-    <p>
-      Aliquid assumenda commodi consequuntur cupiditate debitis dolor enim eum
-      expedita, facilis hic ipsum, magni minima nisi nulla odit omnis
-      praesentium provident quia quidem rem repellendus tempora tempore ullam ut
-      vero.
-    </p>
-    <p>
-      Aspernatur ipsum laudantium optio placeat provident quae qui sunt vero?
-      Aperiam architecto cupiditate delectus doloribus exercitationem fugit hic
-      id ipsa ipsum iure laboriosam minima, obcaecati porro repellat repellendus
-      ullam vel.
-    </p>
-    <p>
-      Animi, beatae dolorem, dolores ducimus iusto, mollitia necessitatibus
-      nesciunt odit quo quos reprehenderit sed ut. Blanditiis est, velit.
-      Aspernatur dignissimos dolorem eum fugit harum iste neque quo, quos rem
-      sunt!
-    </p>
-    <p>
-      At blanditiis consequatur deleniti distinctio dolorem ducimus eaque esse
-      ex exercitationem ipsa labore laborum molestias natus necessitatibus nemo
-      nostrum nulla placeat quam quia quidem, quisquam saepe sint vel vero
-      vitae.
-    </p>
     <script>
       document.querySelector("#openMask").addEventListener("click", () => {
         let { instance, close } = showMask();
-        instance.addEventListener("click", () => {
-          close();
-        });
+        instance.addEventListener("click", close);
       });
 
       function showMask() {
@@ -95,9 +69,7 @@
         mask.className = "mask";
         document.body.appendChild(mask);
         document.body.style.overflow = "hidden";
-        setTimeout(() => {
-          mask.classList.add("show");
-        }, 0);
+        setTimeout(() => mask.classList.add("show"));
 
         const close = (() => {
           // remove mask after transition end

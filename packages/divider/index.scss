@@ -1,0 +1,14 @@
+hr.divider {
+  display: flex;
+  border: none;
+  height: 1px;
+  margin: 0;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+
+  &.v {
+    height: auto;
+    width: 1px;
+    align-self: stretch;
+  }
+}
