@@ -4,7 +4,8 @@
   "description": "simplify css framework",
   "scripts": {
     "watch": "sass -w packages --no-source-map",
-    "build": "sass packages --no-source-map"
+    "build": "sass packages --no-source-map",
+    "postbuild": "gulp generateDoc"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.2",
