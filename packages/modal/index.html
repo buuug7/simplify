@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="../button/index.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="../button/index.css"
+      data-href="https://unpkg.com/@buuug7/simplify-button@latest/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="index.css"
+      data-href="https://unpkg.com/@buuug7/simplify-modal@latest/index.css"
+    />
   </head>
   <body style="padding: 1rem">
     <h2>Modal</h2>
@@ -137,35 +145,35 @@
 
     <script>
       function addMask() {
-        const mask = document.createElement('div');
-        mask.className = 'mask show';
+        const mask = document.createElement("div");
+        mask.className = "mask show";
         document.body.appendChild(mask);
       }
 
       function removeMask() {
-        const mask = document.querySelector('.mask');
+        const mask = document.querySelector(".mask");
         if (mask) {
           document.body.removeChild(mask);
         }
       }
 
-      document.querySelector('#openModal').addEventListener('click', () => {
+      document.querySelector("#openModal").addEventListener("click", () => {
         openModal();
       });
 
       function openModal() {
-        const modal = document.querySelector('.modal');
-        const closeBtn = modal.querySelector('.close');
+        const modal = document.querySelector(".modal");
+        const closeBtn = modal.querySelector(".close");
 
         addMask();
-        modal.style.display = 'block';
-        modal.classList.add('show');
-        document.body.classList.add('modal-open');
+        modal.style.display = "block";
+        modal.classList.add("show");
+        document.body.classList.add("modal-open");
 
-        closeBtn.addEventListener('click', () => {
-          modal.style.display = 'none';
-          modal.classList.remove('show');
-          document.body.classList.remove('modal-open');
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+          modal.classList.remove("show");
+          document.body.classList.remove("modal-open");
           removeMask();
         });
       }
