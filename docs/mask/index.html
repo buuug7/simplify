@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mask</title>
+    <title>Spinner</title>
     <link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-mask@latest/index.css" />
   </head>
   <body style="padding: 1rem">
@@ -60,21 +60,35 @@
     </p>
     <script>
       document.querySelector("#openMask").addEventListener("click", () => {
-        // disable scroll
-        document.body.style.overflow = "hidden";
-        showMask();
+        let { instance, close } = showMask();
+        instance.addEventListener("click", close);
       });
 
       function showMask() {
         const mask = document.createElement("div");
-        mask.className = "mask show";
+        mask.className = "mask";
         document.body.appendChild(mask);
+        document.body.style.overflow = "hidden";
+        setTimeout(() => mask.classList.add("show"));
 
-        // optional
-        // click mask to remove
-        mask.addEventListener("click", () => {
-          document.body.removeChild(mask);
-        });
+        const close = (() => {
+          // remove mask after transition end
+          mask.addEventListener("transitionend", (e) => {
+            const target = e.target;
+            const contains = target.classList.contains("hide");
+            if (contains) {
+              document.body.removeChild(mask);
+              document.body.style.overflow = "auto";
+            }
+          });
+
+          return () => {
+            mask.classList.remove("show");
+            mask.classList.add("hide");
+          };
+        })();
+
+        return { instance: mask, close };
       }
     </script>
   </body>

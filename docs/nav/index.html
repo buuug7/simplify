@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav</title>
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-form@latest/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-nav@latest/index.css" />
     <style>
@@ -21,7 +22,7 @@
     <h2>color primary</h2>
     <div class="navbar">
       <div class="container">
-        <a class="toggle-btn" id="toggle-btn-1" href="#12">
+        <a class="toggle-btn" id="toggle-btn-1" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -37,18 +38,18 @@
           </svg>
         </a>
 
-        <a class="brand" href="#333">Simplify</a>
+        <a class="brand" href="#">Simplify</a>
 
         <div class="content">
           <ul>
-            <li class="item active"><a href="#1">Explore</a></li>
-            <li class="item"><a href="#2">Tutorial</a></li>
-            <li class="item"><a href="#3">Best practices</a></li>
+            <li class="item active"><a href="#">Explore</a></li>
+            <li class="item"><a href="#">Tutorial</a></li>
+            <li class="item"><a href="#">Best practices</a></li>
           </ul>
         </div>
 
         <div class="g">
-          <a class="item search-btn" id="search-btn-1" href="#123">
+          <a class="item search-btn" id="search-btn-1" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -65,7 +66,7 @@
         </div>
       </div>
 
-      <div class="expand-menu">
+      <div class="expand-menu hide">
         <ul>
           <li><a href="#">Explore</a></li>
           <li><a href="#">Tutorial</a></li>
@@ -94,7 +95,7 @@
     <h2>color white</h2>
     <div class="navbar white">
       <div class="container">
-        <a class="toggle-btn" id="toggle-btn-2" href="#12">
+        <a class="toggle-btn" id="toggle-btn-2" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -110,18 +111,18 @@
           </svg>
         </a>
 
-        <a class="brand" href="#333">Simplify</a>
+        <a class="brand" href="#">Simplify</a>
 
         <div class="content">
           <ul>
-            <li class="item active"><a href="#1">Explore</a></li>
-            <li class="item"><a href="#2">Tutorial</a></li>
-            <li class="item"><a href="#3">Best practices</a></li>
+            <li class="item active"><a href="#">Explore</a></li>
+            <li class="item"><a href="#">Tutorial</a></li>
+            <li class="item"><a href="#">Best practices</a></li>
           </ul>
         </div>
 
         <div class="g">
-          <a class="item search-btn" id="search-btn-2" href="#123">
+          <a class="item search-btn" id="search-btn-2" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -138,7 +139,7 @@
         </div>
       </div>
 
-      <div class="expand-menu">
+      <div class="expand-menu hide">
         <ul>
           <li><a href="#">Explore</a></li>
           <li><a href="#">Tutorial</a></li>
@@ -167,7 +168,7 @@
     <h2>with shadow</h2>
     <div class="navbar white shadow">
       <div class="container">
-        <a class="toggle-btn" id="toggle-btn-3" href="#12">
+        <a class="toggle-btn" id="toggle-btn-3" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -183,18 +184,18 @@
           </svg>
         </a>
 
-        <a class="brand" href="#333">Simplify</a>
+        <a class="brand" href="#">Simplify</a>
 
         <div class="content">
           <ul>
-            <li class="item active"><a href="#1">Explore</a></li>
-            <li class="item"><a href="#2">Tutorial</a></li>
-            <li class="item"><a href="#3">Best practices</a></li>
+            <li class="item active"><a href="#">Explore</a></li>
+            <li class="item"><a href="#">Tutorial</a></li>
+            <li class="item"><a href="#">Best practices</a></li>
           </ul>
         </div>
 
         <div class="g">
-          <a class="item search-btn" id="search-btn-3" href="#123">
+          <a class="item search-btn" id="search-btn-3" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -211,7 +212,7 @@
         </div>
       </div>
 
-      <div class="expand-menu">
+      <div class="expand-menu hide">
         <ul>
           <li><a href="#">Explore</a></li>
           <li><a href="#">Tutorial</a></li>
@@ -240,52 +241,61 @@
     <script>
       function initMenuToggle(selector) {
         const toggleBtn = document.querySelector(selector);
-        toggleBtn.addEventListener('click', () => {
-          const closestNav = toggleBtn.closest('.navbar');
-          const expandMenu = closestNav.querySelector('.expand-menu');
-          const display = window.getComputedStyle(expandMenu).display;
-          display === 'flex'
-            ? (expandMenu.style.display = 'none')
-            : (expandMenu.style.display = 'flex');
+        toggleBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const closestNav = toggleBtn.closest(".navbar");
+          const expandMenu = closestNav.querySelector(".expand-menu");
+          const contains = expandMenu.classList.contains("show");
+          contains ? hideExpandMenu(expandMenu) : showExpandMenu(expandMenu);
         });
+      }
+
+      function hideExpandMenu(expandMenu) {
+        expandMenu.classList.remove("show");
+        expandMenu.classList.add("hide");
+      }
+
+      function showExpandMenu(expandMenu) {
+        expandMenu.classList.add("show");
+        expandMenu.classList.remove("hide");
       }
 
       function initSearch(selector) {
         const searchBtn = document.querySelector(selector);
 
         let searchPanel;
-        searchBtn.addEventListener('click', (e) => {
-          // if have some expand menu already show
-          // and close it
+        searchBtn.addEventListener("click", (e) => {
+          // hide expand menu before show search
           document
-            .querySelectorAll('.expand-menu')
-            .forEach((it) => (it.style.display = 'none'));
-          const closestNav = searchBtn.closest('.navbar');
-          searchPanel = closestNav.querySelector('.search-panel');
-          searchPanel.style.display = 'flex';
+            .querySelectorAll(".expand-menu")
+            .forEach((it) => hideExpandMenu(it));
+
+          const closestNav = searchBtn.closest(".navbar");
+          searchPanel = closestNav.querySelector(".search-panel");
+          searchPanel.style.display = "flex";
         });
 
-        document.addEventListener('click', (e) => {
+        document.addEventListener("click", (e) => {
           const target = e.target;
 
           if (
-            !target.closest('.search-panel') &&
+            !target.closest(".search-panel") &&
             !target.closest(selector) &&
             searchPanel &&
-            searchPanel.style.display === 'flex'
+            searchPanel.style.display === "flex"
           ) {
-            searchPanel.style.display = 'none';
+            searchPanel.style.display = "none";
           }
         });
       }
 
-      initMenuToggle('#toggle-btn-1');
-      initMenuToggle('#toggle-btn-2');
-      initMenuToggle('#toggle-btn-3');
+      initMenuToggle("#toggle-btn-1");
+      initMenuToggle("#toggle-btn-2");
+      initMenuToggle("#toggle-btn-3");
 
-      initSearch('#search-btn-1');
-      initSearch('#search-btn-2');
-      initSearch('#search-btn-3');
+      initSearch("#search-btn-1");
+      initSearch("#search-btn-2");
+      initSearch("#search-btn-3");
     </script>
   </body>
 </html>
