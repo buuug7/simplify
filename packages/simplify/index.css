@@ -669,7 +669,7 @@ html {
     transform: rotate(360deg);
   }
 }
-.spinner {
+.spinner-v1 {
   display: inline-flex;
   position: relative;
   content: "";
@@ -681,6 +681,10 @@ html {
   width: 1.5rem;
   background: transparent;
   animation: rotate 0.75s 0s linear infinite;
+}
+
+.spinner-v2 svg {
+  animation: rotate 1s linear infinite;
 }
 
 .snackbar {

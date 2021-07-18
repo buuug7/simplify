@@ -12,10 +12,10 @@ $border-length: 2px;
   }
 }
 
-.spinner {
+.spinner-v1 {
   display: inline-flex;
   position: relative;
-  content: '';
+  content: "";
   margin: 2px;
   border-radius: 100%;
   border: $border-length solid $primary-color;
@@ -24,4 +24,10 @@ $border-length: 2px;
   width: $size;
   background: transparent;
   animation: rotate 0.75s 0s linear infinite;
+}
+
+.spinner-v2 {
+  svg {
+    animation: rotate 1s linear infinite;
+  }
 }
