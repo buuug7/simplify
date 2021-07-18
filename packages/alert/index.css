@@ -10,6 +10,11 @@
   background-color: #e9ecef;
   pointer-events: none;
 }
+.alert *,
+.alert *::before,
+.alert *::after {
+  box-sizing: inherit;
+}
 
 .alert.primary {
   background-color: #007bff;

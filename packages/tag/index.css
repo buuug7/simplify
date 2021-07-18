@@ -3,6 +3,11 @@
   padding-left: 0;
   box-sizing: border-box;
 }
+.tag *,
+.tag *::before,
+.tag *::after {
+  box-sizing: inherit;
+}
 .tag .item {
   display: inline-block;
   padding: 0;

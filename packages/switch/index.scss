@@ -17,6 +17,12 @@ $switch-height: 28px;
   cursor: pointer;
   animation: all 0.2s ease-in-out;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   &::before {
     content: "";
     width: $switch-height - 2px;

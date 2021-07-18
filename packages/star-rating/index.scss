@@ -21,6 +21,12 @@ $star-bg-fill: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My
   -webkit-mask-size: cover;
   display: inline-flex;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   &.fill {
     mask-image: $star-bg-fill;
     -webkit-mask-image: $star-bg-fill;

@@ -10,6 +10,11 @@
   background: #3880ff;
   margin-bottom: 1rem;
 }
+.navbar *,
+.navbar *::before,
+.navbar *::after {
+  box-sizing: inherit;
+}
 .navbar .container {
   box-sizing: border-box;
   width: 100%;

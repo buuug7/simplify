@@ -5,6 +5,11 @@
   flex-direction: column;
   background-color: #fff;
 }
+.card *,
+.card *::before,
+.card *::after {
+  box-sizing: inherit;
+}
 .card .header {
   padding: 0.75rem 0.75rem;
   width: 100%;
@@ -21,7 +26,8 @@
 .card .body {
   padding: 0.75rem 0.75rem;
 }
-.card .body h4, .card .body h5 {
+.card .body h4,
+.card .body h5 {
   margin: 8px 0;
 }
 .card .footer {

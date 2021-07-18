@@ -23,3 +23,8 @@
   background-color: #007bff;
   border: 1px solid #007bff;
 }
+.badge *,
+.badge *::before,
+.badge *::after {
+  box-sizing: inherit;
+}

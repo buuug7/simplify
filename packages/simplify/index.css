@@ -28,6 +28,11 @@ html {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.btn *,
+.btn *::before,
+.btn *::after {
+  box-sizing: inherit;
+}
 .btn img, .btn svg {
   display: inline-flex;
   vertical-align: -0.125em;
@@ -107,6 +112,11 @@ html {
   border: 1px solid #ced4da;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control *,
+.form-control *::before,
+.form-control *::after {
+  box-sizing: inherit;
 }
 .form-control[type=file] {
   overflow: hidden;
@@ -261,6 +271,11 @@ html {
   background: #3880ff;
   margin-bottom: 1rem;
 }
+.navbar *,
+.navbar *::before,
+.navbar *::after {
+  box-sizing: inherit;
+}
 .navbar .container {
   box-sizing: border-box;
   width: 100%;
@@ -410,6 +425,11 @@ html {
   display: flex;
   flex-direction: row;
 }
+.pagination *,
+.pagination *::before,
+.pagination *::after {
+  box-sizing: inherit;
+}
 .pagination .item {
   padding: 0.375rem 0.75rem;
   position: relative;
@@ -474,6 +494,11 @@ html {
   transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
 }
+.drawer *,
+.drawer *::before,
+.drawer *::after {
+  box-sizing: inherit;
+}
 .drawer .header {
   display: flex;
   align-items: center;
@@ -516,6 +541,11 @@ html {
   background-color: #e9ecef;
   pointer-events: none;
 }
+.alert *,
+.alert *::before,
+.alert *::after {
+  box-sizing: inherit;
+}
 
 .alert.primary {
   background-color: #007bff;
@@ -545,6 +575,11 @@ html {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 4px;
+}
+.progress *,
+.progress *::before,
+.progress *::after {
+  box-sizing: inherit;
 }
 .progress > .bar {
   height: 100%;
@@ -584,6 +619,11 @@ html {
   background-color: #007bff;
   border: 1px solid #007bff;
 }
+.badge *,
+.badge *::before,
+.badge *::after {
+  box-sizing: inherit;
+}
 
 .breadcrumb {
   box-sizing: border-box;
@@ -594,6 +634,11 @@ html {
   padding: 0.5rem 0.75rem;
   margin: 0 0 1rem 0;
   background-color: #fff;
+}
+.breadcrumb *,
+.breadcrumb *::before,
+.breadcrumb *::after {
+  box-sizing: inherit;
 }
 .breadcrumb.center {
   flex-direction: row;
@@ -705,6 +750,11 @@ html {
   flex-direction: row;
   align-items: center;
 }
+.snackbar *,
+.snackbar *::before,
+.snackbar *::after {
+  box-sizing: inherit;
+}
 .snackbar .close {
   color: #fff;
   cursor: pointer;
@@ -736,21 +786,6 @@ html {
     opacity: 1;
   }
 }
-.mask {
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  opacity: 0;
-}
-.mask.show {
-  opacity: 1;
-}
-
 .modal-open {
   overflow: hidden;
 }
@@ -766,10 +801,15 @@ html {
   width: 100%;
   height: 100%;
   outline: 0;
-  z-index: 20;
+  z-index: 1050;
   top: 0;
   left: 0;
   display: none;
+}
+.modal *,
+.modal *::before,
+.modal *::after {
+  box-sizing: inherit;
 }
 .modal .modal-dialog {
   position: relative;
@@ -803,6 +843,11 @@ html {
   padding-left: 0;
   box-sizing: border-box;
 }
+.tag *,
+.tag *::before,
+.tag *::after {
+  box-sizing: inherit;
+}
 .tag .item {
   display: inline-block;
   padding: 0;
@@ -829,6 +874,11 @@ html {
   flex-direction: column;
   background-color: #fff;
 }
+.card *,
+.card *::before,
+.card *::after {
+  box-sizing: inherit;
+}
 .card .header {
   padding: 0.75rem 0.75rem;
   width: 100%;
@@ -845,7 +895,8 @@ html {
 .card .body {
   padding: 0.75rem 0.75rem;
 }
-.card .body h4, .card .body h5 {
+.card .body h4,
+.card .body h5 {
   margin: 8px 0;
 }
 .card .footer {
@@ -868,6 +919,11 @@ html {
   border-radius: 28px;
   cursor: pointer;
   animation: all 0.2s ease-in-out;
+}
+.switch *,
+.switch *::before,
+.switch *::after {
+  box-sizing: inherit;
 }
 .switch::before {
   content: "";
@@ -900,6 +956,11 @@ html {
   mask-size: cover;
   -webkit-mask-size: cover;
   display: inline-flex;
+}
+.star *,
+.star *::before,
+.star *::after {
+  box-sizing: inherit;
 }
 .star.fill {
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktc3Rhci1maWxsIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0zLjYxMiAxNS40NDNjLS4zODYuMTk4LS44MjQtLjE0OS0uNzQ2LS41OTJsLjgzLTQuNzNMLjE3MyA2Ljc2NWMtLjMyOS0uMzE0LS4xNTgtLjg4OC4yODMtLjk1bDQuODk4LS42OTZMNy41MzguNzkyYy4xOTctLjM5LjczLS4zOS45MjcgMGwyLjE4NCA0LjMyNyA0Ljg5OC42OTZjLjQ0MS4wNjIuNjEyLjYzNi4yODIuOTVsLTMuNTIyIDMuMzU2LjgzIDQuNzNjLjA3OC40NDMtLjM2Ljc5LS43NDYuNTkyTDggMTMuMTg3bC00LjM4OSAyLjI1NnoiLz4KPC9zdmc+");

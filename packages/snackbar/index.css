@@ -16,6 +16,11 @@
   flex-direction: row;
   align-items: center;
 }
+.snackbar *,
+.snackbar *::before,
+.snackbar *::after {
+  box-sizing: inherit;
+}
 .snackbar .close {
   color: #fff;
   cursor: pointer;

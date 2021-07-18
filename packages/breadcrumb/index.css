@@ -8,6 +8,11 @@
   margin: 0 0 1rem 0;
   background-color: #fff;
 }
+.breadcrumb *,
+.breadcrumb *::before,
+.breadcrumb *::after {
+  box-sizing: inherit;
+}
 .breadcrumb.center {
   flex-direction: row;
   justify-content: center;

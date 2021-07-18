@@ -5,6 +5,12 @@ $second-color: #e9ecef;
   display: flex;
   flex-direction: row;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   .item {
     padding: 0.375rem 0.75rem;
     position: relative;

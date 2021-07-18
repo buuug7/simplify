@@ -8,6 +8,12 @@ $second-color: #e9ecef;
   width: 100%;
   height: 4px;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   > .bar {
     height: 100%;
     width: 0;

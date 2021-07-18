@@ -21,6 +21,12 @@ $second-color: #e9ecef;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   img, svg {
     display: inline-flex;
     vertical-align: -.125em;;

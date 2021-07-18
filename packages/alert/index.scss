@@ -11,6 +11,12 @@ $second-color: #e9ecef;
   border: 1px solid $second-color;
   background-color: $second-color;
   pointer-events: none;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
 }
 
 .alert.primary {

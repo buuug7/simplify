@@ -13,6 +13,12 @@ $second-color: #e9ecef;
   background: #3880ff;
   margin-bottom: 1rem;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   .container {
     box-sizing: border-box;
     width: 100%;
@@ -110,7 +116,7 @@ $second-color: #e9ecef;
   .expand-menu {
     display: flex;
     flex-direction: column;
-    transition: max-height .15s ease-in-out;
+    transition: max-height 0.15s ease-in-out;
     visibility: hidden;
     opacity: 0;
 

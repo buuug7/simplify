@@ -16,6 +16,11 @@
   transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
 }
+.drawer *,
+.drawer *::before,
+.drawer *::after {
+  box-sizing: inherit;
+}
 .drawer .header {
   display: flex;
   align-items: center;

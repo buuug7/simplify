@@ -11,6 +11,12 @@ $second-color: #e9ecef;
   margin: 0 0 1rem 0;
   background-color: #fff;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   &.center {
     flex-direction: row;
     justify-content: center;

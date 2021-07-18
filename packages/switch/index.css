@@ -13,6 +13,11 @@
   cursor: pointer;
   animation: all 0.2s ease-in-out;
 }
+.switch *,
+.switch *::before,
+.switch *::after {
+  box-sizing: inherit;
+}
 .switch::before {
   content: "";
   width: 26px;

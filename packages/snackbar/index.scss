@@ -19,8 +19,12 @@ $second-color: #e9ecef;
   flex-direction: row;
   align-items: center;
 
-  .text {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
+
   .close {
     color: #fff;
     cursor: pointer;
