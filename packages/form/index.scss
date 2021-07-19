@@ -51,7 +51,7 @@ $transition1: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     box-sizing: inherit;
   }
 
-  &[type='file'] {
+  &[type="file"] {
     overflow: hidden;
     &:not(:disabled):not([readonly]) {
       cursor: pointer;
@@ -113,7 +113,7 @@ $transition1: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   }
   &[multiple],
-  &[size]:not([size='1']) {
+  &[size]:not([size="1"]) {
     padding-right: 0.75rem;
     background-image: none;
   }
@@ -147,7 +147,7 @@ $transition1: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   //  border-radius: 0.25em;
   //}
 
-  &[type='radio'] {
+  &[type="radio"] {
     border-radius: 50%;
   }
 
@@ -156,11 +156,11 @@ $transition1: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-color: #0d6efd;
   }
 
-  &:checked[type='checkbox'] {
+  &:checked[type="checkbox"] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
   }
 
-  &:checked[type='radio'] {
+  &:checked[type="radio"] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
   }
 
@@ -180,12 +180,12 @@ $transition1: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   display: block;
   box-sizing: border-box;
   min-height: 1.5rem;
-  padding-left: 1.5em;
   margin-bottom: 0.125rem;
 
   .form-check-input {
-    float: left;
-    margin-left: -1.5em;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
   }
 
   &.inline {
