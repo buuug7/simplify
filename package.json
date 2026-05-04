@@ -1,16 +1,21 @@
 {
   "name": "@buuug7/simplify",
   "version": "0.1.2",
+  "private": true,
   "description": "simplify css framework",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "watch": "sass -w packages --no-source-map",
     "build": "sass packages --no-source-map",
-    "postbuild": "gulp generateDoc"
+    "postbuild": "gulp generateDoc",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@types/gulp": "^4.0.2",
     "gulp": "^4.0.2",
-    "lerna": "^4.0.0",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "sass": "^1.35.1",
