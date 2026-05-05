@@ -30,14 +30,27 @@ function copyHtml() {
 }
 
 /**
- * 复制 README.md 到 docs 目录
+ * 复制 README.md 到 docs 目录, 并替换里面的 README.md 为 index.html
  */
 function copyIndex() {
-  return src("README.md").pipe(dest("docs"));
+  return src("README.md")
+    .pipe(
+      through.obj(function (file, enc, cb) {
+        let content = file.contents.toString();
+        content = content.replace(
+          /README.md/g,
+          "index.html",
+        );
+        file.contents = Buffer.from(content);
+        cb(null, file);
+      }),
+    )
+    .pipe(dest("docs"));
 }
 
 module.exports = {
   generateDoc: series(clean, copyHtml, copyIndex),
   clean,
   copyHtml,
+  copyIndex
 };
