@@ -31,6 +31,6 @@
 }
 .switch.active {
   background-color: #007bff;
-  border-color: #4da3ff;
+  border-color: rgb(76.5, 162.6, 255);
   justify-content: flex-end;
 }

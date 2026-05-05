@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $primary-color: #007bff;
 $second-color: #e9ecef;
 $switch-height: 28px;
@@ -37,7 +39,7 @@ $switch-height: 28px;
 
   &.active {
     background-color: $primary-color;
-    border-color: lighten($primary-color, 15%);
+    border-color: color.adjust($primary-color, $lightness: 15%);
     justify-content: flex-end;
   }
 }

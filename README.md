@@ -8,20 +8,40 @@ the fear of being dominated by outdated browsers.
 
 > Note: The framework only provide style and basic interaction with raw Javascript, how to integrate with other framework is depending on you. for example, if you use React or Vue, you need to wrap this as a component.
 
-> Note: We used the [bootstrap-reboot](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap-reboot.css) as the default reset CSS to reset the browser default style.
+## before you start
+
+We used the [bootstrap-reboot](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap-reboot.css) as the default reset CSS to reset the browser default style. You can include it in your html before you start.
+
+```html
+<!-- bootstrap-reboot.css -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap-reboot.css" />
+```
 
 ## usage
 
 Install single package of simplify component library
 
 ```bash
-npm install @buuug7/simplify-<component-name>
+npm install @buuug7/simplify-<component-name></component-name>
 ```
 
 Install all the packages of simplify
 
 ```bash
 npm install @buuug7/simplify
+```
+
+## usage with CDN
+
+```html
+<!-- bootstrap-reboot.css -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap-reboot.css" />
+
+<!-- include all simplify packages css -->
+<link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify@latest/index.css" />
+
+<!-- or include single component css as below -->
+<link rel="stylesheet" href="https://unpkg.com/@buuug7/simplify-<component-name>@latest/index.css" />
 ```
 
 ## components
@@ -48,3 +68,7 @@ npm install @buuug7/simplify
 ## TODO
 
 - [x] add basic transition for every component
+
+```
+
+```

@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $primary-color: #007bff;
 $second-color: #e9ecef;
 
@@ -18,8 +20,11 @@ $second-color: #e9ecef;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 
   *,
   *::before,
@@ -27,16 +32,17 @@ $second-color: #e9ecef;
     box-sizing: inherit;
   }
 
-  img, svg {
+  img,
+  svg {
     display: inline-flex;
-    vertical-align: -.125em;;
+    vertical-align: -0.125em;
     width: 1em;
     height: 1em;
   }
 
   &:hover {
     text-decoration: none;
-    background-color: darken($second-color, 10%);
+    background-color: color.adjust($second-color, $lightness: 10%);
   }
 
   &:focus {
@@ -57,7 +63,7 @@ $second-color: #e9ecef;
 
   &:hover {
     text-decoration: none;
-    background-color: darken($primary-color, 10%);
+    background-color: color.adjust($primary-color, $lightness: 10%);
   }
 }
 

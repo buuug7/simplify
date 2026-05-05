@@ -21,7 +21,7 @@
   font-size: 80%;
 }
 .tag .item > a:hover {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 .tag .item.rounded > a {
   border-radius: 20px;

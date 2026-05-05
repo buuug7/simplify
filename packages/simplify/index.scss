@@ -1,23 +1,23 @@
-@import "base";
+@use "base";
 
 // components
-@import "../button";
-@import "../form";
-@import "../nav";
-@import "../pagination";
-@import "../drawer";
-@import "../alert";
-@import "../progress";
-@import "../badge";
-@import "../breadcrumb";
-@import "../skeleton";
-@import "../spinner";
-@import "../snackbar";
-@import "../modal";
-@import "../tag";
-@import "../card";
-@import "../switch";
-@import "../star-rating";
-@import "../mask";
+@use "../button/index.scss" as button;
+@use "../form/index.scss" as form;
+@use "../nav/index.scss" as nav;
+@use "../pagination/index.scss" as pagination;
+@use "../drawer/index.scss" as drawer;
+@use "../alert/index.scss" as alert;
+@use "../progress/index.scss" as progress;
+@use "../badge/index.scss" as badge;
+@use "../breadcrumb/index.scss" as breadcrumb;
+@use "../skeleton/index.css" as skeleton;
+@use "../spinner/index.scss" as spinner;
+@use "../snackbar/index.scss" as snackbar;
+@use "../modal/index.scss" as modal;
+@use "../tag/index.scss" as tag;
+@use "../card/index.scss" as card;
+@use "../switch/index.scss" as switch;
+@use "../star-rating/index.scss" as star-rating;
+@use "../mask/index.css" as mask;
 
 
