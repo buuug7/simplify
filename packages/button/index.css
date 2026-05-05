@@ -30,7 +30,7 @@
 }
 .btn:hover {
   text-decoration: none;
-  background-color: #cbd3da;
+  background-color: rgb(203.4736842105, 210.5, 217.5263157895);
 }
 .btn:focus {
   outline: none;
@@ -47,7 +47,7 @@
 }
 .btn.primary:hover {
   text-decoration: none;
-  background-color: #0062cc;
+  background-color: rgb(0, 98.4, 204);
 }
 
 .btn.outline {
@@ -57,6 +57,10 @@
 .btn.outline:hover {
   text-decoration: none;
   background-color: #e9ecef;
+}
+.btn.outline.primary {
+  border-color: #007bff;
+  color: #007bff;
 }
 
 .btn.link {

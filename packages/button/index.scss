@@ -68,6 +68,11 @@ $second-color: #e9ecef;
     text-decoration: none;
     background-color: $second-color;
   }
+
+  &.primary {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
 }
 
 .btn.link {
