@@ -37,9 +37,17 @@ function copyIndex() {
     .pipe(
       through.obj(function (file, enc, cb) {
         let content = file.contents.toString();
+
+        //  README.md 替换为 index.html
         content = content.replace(
           /README.md/g,
           "index.html",
+        );
+
+        // packages/ 替换为空
+        content = content.replace(
+          /packages\//g,
+          "",
         );
         file.contents = Buffer.from(content);
         cb(null, file);
