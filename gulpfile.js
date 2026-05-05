@@ -1,19 +1,21 @@
 const { src, dest, series } = require("gulp");
 const through = require("through2");
-const rimraf = require("rimraf");
+const fs = require("fs");
 
 const reg1 =
   /<link[^>]*?href\s*=\s*[""']?([^'"" >]+?)[ '""][^>]*?data-href\s*=\s*[""']?([^'"" >]+?)[ '""][^>]*?>/gi;
 
+/**
+ * 清理输出目录
+ */
 function clean(cb) {
-  rimraf("docs/**/*", (err) => {
-    if (err) {
-      console.log(err);
-    }
-    cb();
-  });
+  fs.rmSync("docs", { recursive: true, force: true });
+  cb();
 }
 
+/**
+ * 复制并处理 HTML 文件
+ */
 function copyHtml() {
   return src(["packages/**/*.html"])
     .pipe(
@@ -22,11 +24,14 @@ function copyHtml() {
         content = content.replace(reg1, `<link rel="stylesheet" href="$2" />`);
         file.contents = Buffer.from(content);
         cb(null, file);
-      })
+      }),
     )
     .pipe(dest("docs"));
 }
 
+/**
+ * 复制 README.md 到 docs 目录
+ */
 function copyIndex() {
   return src("README.md").pipe(dest("docs"));
 }
